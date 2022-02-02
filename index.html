@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ricerca delle ricorrenze ed occorrenze</title>
+        <script src="script.js"></script>
+	</head>
+	<body>
+    <center>
+		<h1 id="main-title">Ricerca delle ricorrenze ed occorrenze</h1>
+		<textarea id="text-content" rows="15" cols="125" readonly>L'Ateniese Milziade, figlio di Cimone, spiccava fra tutti sia per l'antichità della stirpe, sia per la gloria degli antenati, sia per la propria saggezza ed aveva un'età tale che i suoi concittadini potevano non più solo concepire buone speranze su di lui, ma anche confidare che sarebbe stato quale ebbero poi modo, alla prova, di riscontrare, quando gli Ateniesi decisero di inviare dei coloni nel Chersoneso. Ce n'era un grande numero e molti chiedevano di partecipare alla spedizione, tra loro ne furono scelti alcuni e inviati a Delfi per consultare l'oracolo di Apollo su chi dovessero preferire come comandante. Quelle regioni infatti le occupavano allora i Traci e con loro bisognava combattere. La Pizia in risposta a chi la interrogava, ordinò espressamente che si prendessero come capo Milziade: se lo avessero fatto, l'impresa avrebbe avuto buon esito. In seguito al responso dell'oracolo, Milziade con truppe scelte parti con la flotta per il Chersoneso e, approdato a Lemno voleva ridurre gli abitanti dell'isola sotto il dominio degli Ateniesi e chiese ai Lemnii di arrendersi spontaneamente; quelli, schernendolo, risposero che lo avrebbero fatto quando lui, salpato con la flotta da casa sua, avesse raggiunto Lemno con il vento di tramontana. Questo vento infatti sorgendo da settentrione tiene la direzione contraria per chi parte da Atene. Milziade, non avendo tempo di trattenersi, indirizzò la rotta verso la sua meta e arrivò nel Chersoneso.</textarea>
+        <br> <br>
+        <button id="total-word-count" onclick="totalWordCount()">Conta le parole totali nel testo</button> - 
+        <button id="total-letter-count" onclick="totalLetterCount()">Conta le lettere totali nel testo</button> - 
+        <button id="total-char-count" onclick="totalCharCount()">Conta i caratteri totali nel testo</button> - 
+        <input type="text" id="search-box" placeholder="Inserisci una parola">
+        <button id="custom-search" onclick="customSearch()">Ricerca occorrenza di una parola specifica</button> - 
+        <button id="all-stats" onclick="totalCharCount(); totalLetterCount(); totalWordCount();">Pulsante magico</button>
+        <br>
+        <p id="search-text">Qui apparirà il risultato della ricerca specifica</p>
+        <p id="words-text">Qui apparirà il numero delle parole totali</p>
+        <p id="chars-text">Qui apparirà il numero dei caratteri totali</p>
+        <p id="letters-text">Qui apparirà il numero delle lettere totali</p>
+    </center>
+</html>
